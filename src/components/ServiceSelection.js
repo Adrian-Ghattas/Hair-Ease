@@ -37,20 +37,20 @@ function ServiceSelection({ onNext, onSelect, initialServices = [] }) {
       <h2>Select Service(s)</h2>
       
       <div style={serviceStyle} onClick={() => toggleService('Short Haircut')}>
-        <span>Short Haircut ($20)</span>
+        <span>Short Haircut ($15)</span>
         <input
           type="checkbox"
-          checked={service.includes('Short Haircut ($20)')}
-          onChange={() => toggleService('Short Haircut ($20)')}
+          checked={service.includes('Short Haircut ($15)')}
+          onChange={() => toggleService('Short Haircut ($15)')}
         />
       </div>
 
       <div style={serviceStyle} onClick={() => toggleService('Beard Trim')}>
-        <span>Beard Trim ($15)</span>
+        <span>Beard Trim ($25)</span>
         <input
           type="checkbox"
-          checked={service.includes('Beard Trim ($15)')}
-          onChange={() => toggleService('Beard Trim ($15)')}
+          checked={service.includes('Beard Trim ($25)')}
+          onChange={() => toggleService('Beard Trim ($25)')}
         />
       </div>
 
@@ -69,6 +69,3 @@ function ServiceSelection({ onNext, onSelect, initialServices = [] }) {
 }
 
 export default ServiceSelection;
-
-
-
