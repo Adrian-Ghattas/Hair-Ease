@@ -30,14 +30,13 @@ function App() {
         )}
         {step === 4 && <BookingConfirmation booking={bookingInfo} />}
       </main>
-      <footer style={{ textAlign: 'center', padding: '1rem', fontSize: '0.9rem' }}>
-  <p>
-    © {new Date().getFullYear()} HairEase. All rights reserved. | Contact: info@hairease.com | Designed by Adrian Ghattas
-  </p>
+      <footer style={{ textAlign: 'center', padding: '1rem', color: '#fffff' }}>
+  <div>HairEase. All rights reserved.</div>
+  <div>Email: info@hairease.com | Phone #: (123) 456-7890</div>
+  <div>Designed by Adrian Ghattas</div>
 </footer>
 
     </div>
-    
   );
 }
 
