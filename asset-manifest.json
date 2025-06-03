@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.01cd67a9.css",
-    "main.js": "/static/js/main.33e2cdb6.js",
-    "index.html": "/index.html",
-    "main.01cd67a9.css.map": "/static/css/main.01cd67a9.css.map",
-    "main.33e2cdb6.js.map": "/static/js/main.33e2cdb6.js.map"
+    "main.css": "/Hair-Ease/static/css/main.01cd67a9.css",
+    "main.js": "/Hair-Ease/static/js/main.33e2cdb6.js",
+    "index.html": "/Hair-Ease/index.html",
+    "main.01cd67a9.css.map": "/Hair-Ease/static/css/main.01cd67a9.css.map",
+    "main.33e2cdb6.js.map": "/Hair-Ease/static/js/main.33e2cdb6.js.map"
   },
   "entrypoints": [
     "static/css/main.01cd67a9.css",
