@@ -18,7 +18,6 @@ function App() {
         <h1>HairEase</h1>
         <p>Your friendly neighborhood barber shop</p>
       </header>
-
       <main className="app-container">
         {step === 1 && (
           <NameInput onNext={nextStep} onSelect={updateBooking} initialName={bookingInfo.name || ''} />
@@ -30,28 +29,17 @@ function App() {
           <CalendarBooking onNext={nextStep} onSelect={updateBooking} />
         )}
         {step === 4 && <BookingConfirmation booking={bookingInfo} />}
-
-        {/* Contact Info Section */}
-        <section id="contact" style={{ padding: "2rem", backgroundColor: "#f8f9fa", marginTop: "2rem" }}>
-          <h2>Contact Us</h2>
-          <p><strong>Phone:</strong> (555) 123-4567</p>
-          <p><strong>Email:</strong> contact@hairease.com</p>
-          <p><strong>Location:</strong> Downtown Ottawa, ON</p>
-        </section>
-
-        {/* Designed By */}
-        <div style={{ textAlign: "center", marginTop: "1rem", fontStyle: "italic" }}>
-          <p>Designed by Adrian Ghattas</p>
-        </div>
       </main>
-
-      <footer>
+      <footer style={{ backgroundColor: '#f8f9fa', padding: '1rem', textAlign: 'center', marginTop: '2rem' }}>
         <p>© {new Date().getFullYear()} HairEase. All rights reserved.</p>
+        <p><strong>Phone:</strong> (555) 123-4567 | <strong>Email:</strong> contact@hairease.com</p>
+        <p><strong>Location:</strong> Downtown Ottawa, ON</p>
+        <p style={{ fontStyle: 'italic' }}>Designed by Adrian Ghattas and the HairEase Team</p>
       </footer>
     </div>
+    
   );
 }
 
 export default App;
-
 
