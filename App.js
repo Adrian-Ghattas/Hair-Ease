@@ -30,12 +30,12 @@ function App() {
         )}
         {step === 4 && <BookingConfirmation booking={bookingInfo} />}
       </main>
-      <footer style={{ backgroundColor: '#f8f9fa', padding: '1rem', textAlign: 'center', marginTop: '2rem' }}>
-        <p>© {new Date().getFullYear()} HairEase. All rights reserved.</p>
-        <p><strong>Phone:</strong> (555) 123-4567 | <strong>Email:</strong> contact@hairease.com</p>
-        <p><strong>Location:</strong> Downtown Ottawa, ON</p>
-        <p style={{ fontStyle: 'italic' }}>Designed by Adrian Ghattas and the HairEase Team</p>
-      </footer>
+      <footer style={{ textAlign: 'center', padding: '1rem', fontSize: '0.9rem' }}>
+  <p>
+    © {new Date().getFullYear()} HairEase. All rights reserved. | Contact: info@hairease.com | Designed by Adrian Ghattas
+  </p>
+</footer>
+
     </div>
     
   );
