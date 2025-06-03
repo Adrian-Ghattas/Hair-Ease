@@ -21,7 +21,7 @@ function ServiceSelection({ onNext, onSelect, initialServices = [] }) {
   };
 
   const serviceStyle = {
-    border: '2px solid black',  // black border
+    border: '2px solid black',
     borderRadius: '8px',
     padding: '10px 15px',
     marginBottom: '12px',
@@ -35,31 +35,34 @@ function ServiceSelection({ onNext, onSelect, initialServices = [] }) {
   return (
     <div className="card">
       <h2>Select Service(s)</h2>
-      
-      <div style={serviceStyle} onClick={() => toggleService('Short Haircut')}>
+
+      <div style={serviceStyle} onClick={() => toggleService('Short Haircut ($15)')}>
         <span>Short Haircut ($15)</span>
         <input
           type="checkbox"
           checked={service.includes('Short Haircut ($15)')}
           onChange={() => toggleService('Short Haircut ($15)')}
+          onClick={e => e.stopPropagation()}
         />
       </div>
 
-      <div style={serviceStyle} onClick={() => toggleService('Beard Trim')}>
+      <div style={serviceStyle} onClick={() => toggleService('Beard Trim ($25)')}>
         <span>Beard Trim ($25)</span>
         <input
           type="checkbox"
           checked={service.includes('Beard Trim ($25)')}
           onChange={() => toggleService('Beard Trim ($25)')}
+          onClick={e => e.stopPropagation()}
         />
       </div>
 
-      <div style={serviceStyle} onClick={() => toggleService('Hair Dye')}>
+      <div style={serviceStyle} onClick={() => toggleService('Hair Dye ($50)')}>
         <span>Hair Dye ($50)</span>
         <input
           type="checkbox"
           checked={service.includes('Hair Dye ($50)')}
           onChange={() => toggleService('Hair Dye ($50)')}
+          onClick={e => e.stopPropagation()}
         />
       </div>
 
