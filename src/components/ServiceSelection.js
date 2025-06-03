@@ -20,44 +20,55 @@ function ServiceSelection({ onNext, onSelect, initialServices = [] }) {
     onNext();
   };
 
+  const serviceStyle = {
+    border: '2px solid black',  // black border
+    borderRadius: '8px',
+    padding: '10px 15px',
+    marginBottom: '12px',
+    cursor: 'pointer',
+    display: 'flex',
+    justifyContent: 'space-between', // text left, checkbox right
+    alignItems: 'center',
+    userSelect: 'none',
+  };
+
   return (
     <div className="card">
       <h2>Select Service(s)</h2>
-      <div>
-        <label>
-          <input
-            type="checkbox"
-            checked={service.includes('Short Haircut')}
-            onChange={() => toggleService('Short Haircut')}
-          />
-          Short Haircut
-        </label>
+      
+      <div style={serviceStyle} onClick={() => toggleService('Short Haircut')}>
+        <span>Short Haircut ($20)</span>
+        <input
+          type="checkbox"
+          checked={service.includes('Short Haircut ($20)')}
+          onChange={() => toggleService('Short Haircut ($20)')}
+        />
       </div>
-      <div>
-        <label>
-          <input
-            type="checkbox"
-            checked={service.includes('Beard Trim')}
-            onChange={() => toggleService('Beard Trim')}
-          />
-          Beard Trim
-        </label>
+
+      <div style={serviceStyle} onClick={() => toggleService('Beard Trim')}>
+        <span>Beard Trim ($15)</span>
+        <input
+          type="checkbox"
+          checked={service.includes('Beard Trim ($15)')}
+          onChange={() => toggleService('Beard Trim ($15)')}
+        />
       </div>
-      <div>
-        <label>
-          <input
-            type="checkbox"
-            checked={service.includes('Hair Dye')}
-            onChange={() => toggleService('Hair Dye')}
-          />
-          Hair Dye
-        </label>
+
+      <div style={serviceStyle} onClick={() => toggleService('Hair Dye')}>
+        <span>Hair Dye ($50)</span>
+        <input
+          type="checkbox"
+          checked={service.includes('Hair Dye ($50)')}
+          onChange={() => toggleService('Hair Dye ($50)')}
+        />
       </div>
+
       <button onClick={handleNext}>Next</button>
     </div>
   );
 }
 
 export default ServiceSelection;
+
 
 
